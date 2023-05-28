@@ -7,7 +7,6 @@
 // import { Survey } from 'survey-react-ui';
 // import { surveyQuestions } from './surveyQuestions.js';
 
-
 // import { surveyQuestions } from './surveyQuestions';
 
 // function App() {
@@ -40,17 +39,17 @@
 
 // export default App;
 
-import React, { useCallback, useState, useRef } from 'react';
-import './App.css'
-import 'survey-core/defaultV2.min.css';
-import { Model } from 'survey-core';
-import { Survey } from 'survey-react-ui';
-import { DemographicData } from './DemographicData';
-import { DopamineAssessment } from './DopamineAssessment';
-import { AttentionSpanAssessment } from './AttentionSpanAssessment';
+import React, { useCallback, useState, useRef } from "react";
+import "./App.css";
+import "survey-core/defaultV2.min.css";
+import { Model } from "survey-core";
+import { Survey } from "survey-react-ui";
+import { DemographicData } from "./DemographicData";
+import { DopamineAssessment } from "./DopamineAssessment";
+import { AttentionSpanAssessment } from "./AttentionSpanAssessment";
 
 const surveyJson = {
-  pages: [ DemographicData, DopamineAssessment, AttentionSpanAssessment ],
+  pages: [DemographicData, DopamineAssessment, AttentionSpanAssessment],
   showQuestionNumbers: "off",
   pageNextText: "Forward",
   completeText: "Submit",
@@ -58,7 +57,7 @@ const surveyJson = {
   firstPageIsStarted: true,
   startSurveyText: "Start the Survey",
   completedHtml: "Thank you for your participation!",
-  showPreviewBeforeComplete: "showAnsweredQuestions"
+  showPreviewBeforeComplete: "showAnsweredQuestions",
 };
 
 function App() {
@@ -79,14 +78,10 @@ function App() {
       {isSurveyCompleted && (
         <>
           <p>Result JSON:</p>
-          <code style={{ whiteSpace: 'pre' }}>
-            {surveyResults}
-          </code>
+          <code style={{ whiteSpace: "pre" }}>{surveyResults}</code>
         </>
-        )
-      }
+      )}
     </>
   );
 }
-
 export default App;
