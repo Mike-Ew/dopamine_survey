@@ -1,0 +1,49 @@
+/* LandingPage.css */
+
+.landing-container {
+    background-color: rgb(246, 242, 238);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .landing-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  .section-title{
+    text-align: center;
+  }
+ 
+  .landing-section {
+    margin-bottom: 20px;
+  }
+  
+  .landing-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .landing-section p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .start-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 30px auto;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .start-button:hover {
+    background: #0056b3;
+  }
+  
